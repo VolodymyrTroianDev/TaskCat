@@ -1,0 +1,53 @@
+:root {
+  --background-header:#1a1a1a;
+  --background-main: #242424;
+  --color-btn: rgb(206, 197, 197);
+  --hover-color-btn: rgb(143, 137, 137);
+  --active-color: rgb(15, 245, 230);
+}
+h1,body {
+  margin: 0;
+  padding: 0;
+}
+body{
+
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5
+}
+a {
+  text-decoration: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--background-main);
+}
+.d-flex {
+  display: flex;
+}
+
+.col-lg {
+  height: 440px;
+  overflow: hidden;
+  margin: 10px 10px;
+  position: relative;
+  flex-basis: 30%;
+}
+.col {
+  padding: 1%;
+}
+.wrap {
+  flex-wrap: wrap;
+}
