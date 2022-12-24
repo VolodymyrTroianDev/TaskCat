@@ -50,3 +50,8 @@ main {
 .wrap {
   flex-wrap: wrap;
 }
+@media (max-width:600px) {
+  .col-lg {
+    height: 260px;
+  }
+}
