@@ -31,7 +31,6 @@ ol[class] {
 }
 main {
   min-height: 100vh;
-  min-width: 100vw;
   background-color: var(--background-main);
 }
 .d-flex {

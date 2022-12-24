@@ -41,7 +41,6 @@ export default {};
   position: absolute;
   z-index: 1;
   margin: 0 0 0 0;
-  padding: 0;
   pointer-events: none;
   width: 100%;
   top: -17px;
