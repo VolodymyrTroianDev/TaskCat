@@ -19,14 +19,9 @@
 </template>
 
 <script>
-import { usePhotoStore } from "../stores/photoStore";
+import { usePhotoStore } from "../store/photoStore";
 import { mapState } from "pinia";
 export default {
-  data() {
-    return {
-      img: {},
-    };
-  },
   methods: {
     handleUpload() {
       const reader = new FileReader();
@@ -37,8 +32,7 @@ export default {
         dataImg.url = reader.result;
       };
       reader.readAsDataURL(this.$refs.photo.files[0]);
-      this.img = dataImg;
-      usePhotoStore().saveMyCats(this.img);
+      usePhotoStore().saveMyCats(dataImg);
 
       usePhotoStore().messageOutput("Фото додано");
     },

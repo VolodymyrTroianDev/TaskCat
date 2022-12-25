@@ -1,4 +1,4 @@
-import { usePhotoStore } from "../stores/photoStore";
+import { usePhotoStore } from "../store/photoStore";
 
 export const infinityScroll = (refsObserver, storeFunc) => {
   const options = {
@@ -10,10 +10,6 @@ export const infinityScroll = (refsObserver, storeFunc) => {
       switch (storeFunc) {
         case "ApiCats":
           usePhotoStore().loadMoreImg();
-          break;
-
-        case "MyCats":
-          usePhotoStore().loadMoreMyCatsImg();
           break;
       }
     }

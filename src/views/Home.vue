@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { usePhotoStore } from "../stores/photoStore";
+import { usePhotoStore } from "../store/photoStore";
 
 import { mapState } from "pinia";
 export default {
